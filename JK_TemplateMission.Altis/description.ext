@@ -1,0 +1,50 @@
+﻿disabledAI = 1;
+respawn = "BASE";		//{"NONE", "BIRD", "INSTANT", "BASE", "GROUP", "SIDE"}
+respawnDialog = 0;
+respawnButton = 1;
+respawnDelay = 10;
+respawnVehicleDelay = 10;
+respawnTemplates[] = {"Revive","MenuPosition"};		//Templates: "Wave";"Tickets";"Counter";"MenuPosition";"EndMission";"MenuInventory";
+respawnTemplatesWest[] = {"Revive","MenuPosition"};		//Templates: "Wave";"Tickets";"Counter";"MenuPosition";"EndMission";"MenuInventory";
+respawnTemplatesEast[] = {"Revive","MenuPosition"};		//Templates: "Wave";"Tickets";"Counter";"MenuPosition";"EndMission";"MenuInventory";
+respawnTemplatesGuer[] = {"Revive","MenuPosition"};		//Templates: "Wave";"Tickets";"Counter";"MenuPosition";"EndMission";"MenuInventory";
+respawnTemplatesCiv[] = {"Revive","MenuPosition"};		//Templates: "Wave";"Tickets";"Counter";"MenuPosition";"EndMission";"MenuInventory";
+respawnTemplatesVirtual[] = {"Revive","MenuPosition"};		//Templates: "Wave";"Tickets";"Counter";"MenuPosition";"EndMission";"MenuInventory";
+reviveDelay = 40;
+reviveForceRespawnDelay = 10;
+reviveBleedOutDelay = 120;
+joinUnassigned = 1;
+enableDebugConsole = 2;
+author = "Joko & NetFusion & Belbo & Astavinu";
+onLoadName = "Joko Zeus Template";
+onLoadMission = "Viel Spaß!";
+enableItemsDropping = 0;
+wreckManagerMode = 1;
+wreckLimit = 20;
+wreckRemovalMinTime = 120;
+wreckRemovalMaxTime = 4000;
+class cfgDebriefing {
+    class JKEnd
+    {
+        title = "Missions Ende";
+        description = "Diese Mission ist nun leider zu Ende. Wir würden euch bitten, euch noch mal in der Lobby zu sammeln, damit wir die Nachbesprechung anfangen können. Mit freundlichen Grüßen das Server Team";
+        picture = "data\logo.paa";
+    };
+};
+class header
+{
+   gameType = "ZCOOP";
+   minPlayers = 2;
+   maxPlayers = 79;
+};
+
+//-------------------------------------------------------------------------------------------------
+//----------------------------------- DO NOT EDIT BELOW ------------------------------------
+//-------------------------------------------------------------------------------------------------
+
+	class CfgFunctions
+	{
+		#include "lib\cfgFunctions.hpp"
+	};
+// -------------------------------------------------------------------------------------------- //
+#include "lib\Settings\SettingsDialog.hpp"
