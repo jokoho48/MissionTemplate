@@ -29,6 +29,6 @@ JK Settings - by joko // Jonas
 TvT Mission Template Script - by joko // Jonas  
 Logistic System - By joko // Jonas  
 Medical Drag and Drop - By joko // Jonas  
-FHQ Task Tracker - by [FHQ] Varanon 
-X_Reload - Xeno 
-Vehicle Crew List - By X39  
+FHQ Task Tracker - by [FHQ] Varanon   
+X_Reload - Xeno   
+Vehicle Crew List - By X39    
