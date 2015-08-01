@@ -37,33 +37,33 @@ if (_backpack != "") then {
 };
 _unit addHeadgear _headgear;
 if (_useProfileGoggles == 0) then {
-	removeGoggles _unit;
-	_unit addGoggles _goggles;
+    removeGoggles _unit;
+    _unit addGoggles _goggles;
 };
 
 //removing FAKs/MediKits/AGM medic stuff again and adding FAKs/MediKits
 if (_backpack in _medicBackPacks) then {
-	_unit removeItems "MediKit";
-	_unit removeItems "FirstAidKit";
+    _unit removeItems "MediKit";
+    _unit removeItems "FirstAidKit";
 };
 if (_mediKit == 0) then {
-	for "_i" from 1 to _FirstAidKits do	{
-		_unit addItem "FirstAidKit";
-	};
+    for "_i" from 1 to _FirstAidKits do    {
+        _unit addItem "FirstAidKit";
+    };
 };
 if (_mediKit >= 1) then {
-	_unit addItemToBackpack "MediKit";
-	for "_i" from 1 to _FirstAidKits do	{
-		_unit addItemToBackpack "FirstAidKit";
-	};
+    _unit addItemToBackpack "MediKit";
+    for "_i" from 1 to _FirstAidKits do    {
+        _unit addItemToBackpack "FirstAidKit";
+    };
 };
 
 //'nades:
 _IR_GrenType = switch (side (group _unit)) do {
-	case west: {"B_IR_Grenade"};
-	case east: {"O_IR_Grenade"};
-	case independent: {"I_IR_Grenade"};
-	default {"I_IR_Grenade"};
+    case west: {"B_IR_Grenade"};
+    case east: {"O_IR_Grenade"};
+    case independent: {"I_IR_Grenade"};
+    default {"I_IR_Grenade"};
 };
 
 _grenadeArray = [["HandGrenade", _grenadeHE], ["SmokeShell", _grenadeSmokeWhite],["SmokeShellYellow", _grenadeSmokeYellow],["SmokeShellOrange", _grenadeSmokeOrange],["SmokeShellRed", _grenadeSmokeRed],["SmokeShellPurple", _grenadeSmokePurple],["SmokeShellBlue", _grenadeSmokeBlue],["SmokeShellGreen", _grenadeSmokeGreen],["Chemlight_Yellow", _chemlightYellow],["Chemlight_Red", _chemlightRed],["Chemlight_Green", _chemlightGreen],["Chemlight_Blue", _chemlightBlue],[_IR_GrenType, _IRgrenade],["1Rnd_HE_Grenade_shell", _40mmHeGrenadesAmmo],["1Rnd_Smoke_Grenade_shell", _40mmSmokeGrenadesWhite],["1Rnd_SmokeYellow_Grenade_shell", _40mmSmokeGrenadesYellow],["1Rnd_SmokeOrange_Grenade_shell", _40mmSmokeGrenadesOrange],["1Rnd_SmokeRed_Grenade_shell", _40mmSmokeGrenadesRed],["1Rnd_SmokePurple_Grenade_shell", _40mmSmokeGrenadesPurple],["1Rnd_SmokeBlue_Grenade_shell", _40mmSmokeGrenadesBlue],["1Rnd_SmokeGreen_Grenade_shell", _40mmSmokeGrenadesGreen],["UGL_FlareWhite_F", _40mmFlareWhite],["UGL_FlareYellow_F", _40mmFlareYellow],["UGL_FlareRed_F", _40mmFlareRed],["UGL_FlareGreen_F", _40mmFlareGreen],["UGL_FlareCIR_F", _40mmFlareIR]];
@@ -78,16 +78,16 @@ _grenadeArray = [["HandGrenade", _grenadeHE], ["SmokeShell", _grenadeSmokeWhite]
 {_unit addHandgunItem _x; true} count _itemsHandgun;
 [_unit,_launcher,_launcherAmmo,_launcherHandle] call BIS_fnc_addWeapon;
 if (_primaryweaponTracers >= 1) then {
-	if (_primaryWeapon == "arifle_MX_SW_Black_F" || _primaryWeapon == "arifle_MX_SW_F") then {
-		[_unit,_primaryWeapon,_primaryweaponTracers,_ARhandle+1] call BIS_fnc_addWeapon;
-		[_unit,_primaryWeapon,_primaryweaponAmmo,_ARhandle] call BIS_fnc_addWeapon;
-	}
-	else {
-		[_unit,_primaryWeapon,_primaryweaponAmmo,_ARhandle] call BIS_fnc_addWeapon;
-		[_unit,_primaryWeapon,_primaryweaponTracers,_ARhandle+1] call BIS_fnc_addWeapon;
-	};
+    if (_primaryWeapon == "arifle_MX_SW_Black_F" || _primaryWeapon == "arifle_MX_SW_F") then {
+        [_unit,_primaryWeapon,_primaryweaponTracers,_ARhandle+1] call BIS_fnc_addWeapon;
+        [_unit,_primaryWeapon,_primaryweaponAmmo,_ARhandle] call BIS_fnc_addWeapon;
+    }
+    else {
+        [_unit,_primaryWeapon,_primaryweaponAmmo,_ARhandle] call BIS_fnc_addWeapon;
+        [_unit,_primaryWeapon,_primaryweaponTracers,_ARhandle+1] call BIS_fnc_addWeapon;
+    };
 } else {
-	[_unit,_primaryWeapon,_primaryweaponAmmo,_ARhandle] call BIS_fnc_addWeapon;
+    [_unit,_primaryWeapon,_primaryweaponAmmo,_ARhandle] call BIS_fnc_addWeapon;
 };
 {_unit addPrimaryWeaponItem _x; false} count _itemsPrimaryweapon;
 _unit selectWeapon _primaryweapon;
@@ -97,7 +97,7 @@ _unit selectWeapon _primaryweapon;
 {_unit addItemToUniform _x; false} count _itemsUniform;
 {_unit addItemToVest _x; false} count _itemsVest;
 if (_backpack != "") then {
-	{_unit addItemToBackpack _x; false} count _itemsBackpack;
+    {_unit addItemToBackpack _x; false} count _itemsBackpack;
 };
 {_unit addItem _x; false} count _items;
 [_unit,_insignium] call BIS_fnc_setUnitInsignia;

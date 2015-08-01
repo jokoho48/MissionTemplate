@@ -15,7 +15,7 @@ _vests = ["V_PlateCarrierSpec_rgr","V_PlateCarrierGL_rgr"];
 _headgears = ["H_HelmetSpecB_paint1","H_HelmetSpecB_paint2","H_HelmetB_black","H_HelmetB_desert","H_HelmetB_grass","H_HelmetB_paint"];
 _backpacks = ["B_AssaultPack_dgtl","B_AssaultPack_khk","B_AssaultPack_rgr","B_AssaultPack_cbr","B_AssaultPack_mcamo"];
 _insignium = "Curator";
-_useProfileGoggles = 1;		//If set to 1, goggles from your profile will be used. If set to 0, _goggles will be added (or profile goggles will be removed when _goggles is left empty).
+_useProfileGoggles = 1;        //If set to 1, goggles from your profile will be used. If set to 0, _goggles will be added (or profile goggles will be removed when _goggles is left empty).
 _goggles = "G_Combat";
 
 //weapons - primary weapon - (string)
@@ -25,7 +25,7 @@ _primaryweapon = "LMG_Mk200_F";
 _itemsPrimaryweapon = ["optic_MRCO","acc_pointer_IR","bipod_01_F_snd"];
 
 //primary weapon ammo (if a primary weapon is given) and how many tracer mags - (integer)
-_ARhandle = 0;		//should stay the way it is. Determines the class of ammunition for BIS_fnc_addWeapon. Specific Rifles need specific _ARhandles. Test it out.
+_ARhandle = 0;        //should stay the way it is. Determines the class of ammunition for BIS_fnc_addWeapon. Specific Rifles need specific _ARhandles. Test it out.
 _primaryweaponAmmo = 3;
 _primaryweaponTracers = 2;
 
@@ -55,9 +55,9 @@ _handgunAmmo = 2;
 
 //weapons - launcher - (string)
 _launcher = "";
-_launcherHandle = 0;	//should stay the way it is. Determines the class of ammunition for BIS_fnc_addWeapon. Specific launchers need specific _launcherHandle. Test it out.
+_launcherHandle = 0;    //should stay the way it is. Determines the class of ammunition for BIS_fnc_addWeapon. Specific launchers need specific _launcherHandle. Test it out.
 
-//launcher ammo (if a launcher is given) - (integer) 
+//launcher ammo (if a launcher is given) - (integer)
 _launcherAmmo = 0;
 
 //binocular - (string)
@@ -80,7 +80,7 @@ _IRgrenade = 0;
 
 //first aid kits and medi kits- (integer)
 _FirstAidKits = 2;
-_MediKit = 0;		//if set to 1, a MediKit and all FirstAidKits will be added to the backpack; if set to 0, FirstAidKits will be added to inventory in no specific order.
+_MediKit = 0;        //if set to 1, a MediKit and all FirstAidKits will be added to the backpack; if set to 0, FirstAidKits will be added to inventory in no specific order.
 
 //items added specifically to uniform: - (array)
 _itemsUniform = [];
@@ -93,21 +93,21 @@ _itemsBackpack = [];
 
 //linked items - (array)
 _itemsLink = [
-		"ItemRadio",
-		"ItemWatch",
-		"ItemCompass",
-		"NVGoggles",
-		"ItemMap",
-		"ItemGPS"
-		];
-		
+        "ItemRadio",
+        "ItemWatch",
+        "ItemCompass",
+        "NVGoggles",
+        "ItemMap",
+        "ItemGPS"
+        ];
+
 //items added to any container - (array)
 _items = [];
 
 ///// No editing necessary below this line /////
 
 _player = _this select 0;
-_player setCaptive true;	//unfortunately necessary due to the time consumed by changing the weapon
+_player setCaptive true;    //unfortunately necessary due to the time consumed by changing the weapon
 [_player] call jk_loadOut_fnc_gear;
 _player setCaptive false;
 

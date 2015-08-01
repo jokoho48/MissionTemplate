@@ -3,10 +3,3 @@
 3. Add Own Blufore/Opfor/Greenfor Tracker
 5. Add Own Vehicle Respawn Script
 6. Remove all Syncronisations in mission
-
-
-// Feedback
-11. BIS Animations Bug Beheben(wenn Down dann kein Animations Switch)
-14. MPS scheit in Fahrzeugen/Nach Zeit auszusetzten
-
-21. Add Actions zu KilledEventhander hinzufügen

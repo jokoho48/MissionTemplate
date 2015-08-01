@@ -103,26 +103,26 @@
 
 class JK_RSCSlider
 {
-	style = 1024;
-	type = 43;
-	shadow = 2;
-	x = 0;
-	y = 0;
-	h = 0.029412;
-	w = 0.400000;
-	color[] = {
-			1, 1, 1, 0.7
-	};
-	colorActive[] = {
-			1, 1, 1, 1
-	};
-	colorDisabled[] = {
-			1, 1, 1, 0.500000
-	};
-	arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
-	arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
-	border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
-	thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
+    style = 1024;
+    type = 43;
+    shadow = 2;
+    x = 0;
+    y = 0;
+    h = 0.029412;
+    w = 0.400000;
+    color[] = {
+            1, 1, 1, 0.7
+    };
+    colorActive[] = {
+            1, 1, 1, 1
+    };
+    colorDisabled[] = {
+            1, 1, 1, 0.500000
+    };
+    arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
+    arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
+    border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
+    thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
 };
 class JK_RSCBox
 {
@@ -140,15 +140,15 @@ class JK_RSCBox
 class JK_RSCFrame
 {
     access = READWRITE;
-	type = CT_STATIC;
-	idc = -1;
-	colorBackground[] = {0,0,0,0};
-	colorText[] = {1,1,1,1};
-	style = ST_FRAME;
-	shadow = 2;
-	font = "PuristaMedium";
-	sizeEx = 0.02;
-	text = "";
+    type = CT_STATIC;
+    idc = -1;
+    colorBackground[] = {0,0,0,0};
+    colorText[] = {1,1,1,1};
+    style = ST_FRAME;
+    shadow = 2;
+    font = "PuristaMedium";
+    sizeEx = 0.02;
+    text = "";
 };
 class JK_RSCText
 {
@@ -170,39 +170,39 @@ class JK_RSCText
 };
 class JK_RSCStructuredText
 {
-	access = AT_READWRITE;
-	type = CT_STRUCTURED_TEXT;
-	idc = -1;
-	style = ST_LEFT;
-	colorText[] = {1,1,1,1};
-	class Attributes
-	{
-		font = "PuristaMedium";
-		color = "#ffffff";
-		align = "left";
-		shadow = 1;
-	};
+    access = AT_READWRITE;
+    type = CT_STRUCTURED_TEXT;
+    idc = -1;
+    style = ST_LEFT;
+    colorText[] = {1,1,1,1};
+    class Attributes
+    {
+        font = "PuristaMedium";
+        color = "#ffffff";
+        align = "left";
+        shadow = 1;
+    };
 
-	// Doesn't work
-	autoScrollSpeed = -1;
-	autoScrollDelay = 5;
-	autoScrollRewind = 0;
-	arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
-	arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
-	class StructeredTextScrollBar
-	{
-		color[] = {1,1,1,1};
-		autoScrollEnabled = 1;
-	};
-	// Doesn't work
+    // Doesn't work
+    autoScrollSpeed = -1;
+    autoScrollDelay = 5;
+    autoScrollRewind = 0;
+    arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
+    arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
+    class StructeredTextScrollBar
+    {
+        color[] = {1,1,1,1};
+        autoScrollEnabled = 1;
+    };
+    // Doesn't work
 
-	x = 0;
-	y = 0;
-	h = 0.035;
-	w = 0.1;
-	text = "";
-	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-	shadow = 1;
+    x = 0;
+    y = 0;
+    h = 0.035;
+    w = 0.1;
+    text = "";
+    size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    shadow = 1;
 };
 class JK_RSCPicture
 {
@@ -263,7 +263,7 @@ class JK_RSCEdit
     font = "PuristaMedium";
     shadow = 0;
     SIZEEX
-    colorBackground[] =	{0,0,0,0.3};
+    colorBackground[] =    {0,0,0,0.3};
     colorText[] = {1,1,1,1};
     colorDisabled[] = {1,1,1,0.25};
     colorSelection[] = {0.8784, 0.8471, 0.651, 1.0};
@@ -271,62 +271,62 @@ class JK_RSCEdit
 };
 class JK_ScrollBar
 {
-	color[] = {1,1,1,0.6};
-	colorActive[] = {1,1,1,1};
-	colorDisabled[] = {1,1,1,0.3};
-	thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
-	arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
-	arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
-	border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
-	shadow = 0;
-	scrollSpeed = 0.06;
-	width = 0;
-	height = 0;
-	autoScrollEnabled = 0;
-	autoScrollSpeed = -1;
-	autoScrollDelay = 5;
-	autoScrollRewind = 0;
+    color[] = {1,1,1,0.6};
+    colorActive[] = {1,1,1,1};
+    colorDisabled[] = {1,1,1,0.3};
+    thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+    arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+    arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+    border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+    shadow = 0;
+    scrollSpeed = 0.06;
+    width = 0;
+    height = 0;
+    autoScrollEnabled = 0;
+    autoScrollSpeed = -1;
+    autoScrollDelay = 5;
+    autoScrollRewind = 0;
 };
 
 class JK_RSCListBox
 {
-	x = 0;
-	y = 0;
-	w = 0.3;
-	h = 0.3;
-	style = 16;
-	font = "PuristaMedium";
-	sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	shadow = 0;
-	colorShadow[] = {0,0,0,0.5};
-	colorText[] = {1,1,1,1.0};
-	colorDisabled[] = {1,1,1,0.25};
-	colorScrollbar[] = {1,0,0,0};
-	colorSelect[] = {0,0,0,1};
-	colorSelect2[] = {0,0,0,1};
-	colorSelectBackground[] = {0.95,0.95,0.95,1};
-	colorSelectBackground2[] = {1,1,1,0.5};
-	period = 1.2;
-	colorBackground[] = {0,0,0,0.3};
-	maxHistoryDelay = 1.0;
-	colorPicture[] = {1,1,1,1};
-	colorPictureSelected[] = {1,1,1,1};
-	colorPictureDisabled[] = {1,1,1,0.25};
-	colorPictureRight[] = {1,1,1,1};
-	colorPictureRightSelected[] = {1,1,1,1};
-	colorPictureRightDisabled[] = {1,1,1,0.25};
-	colorTextRight[] = {1,1,1,1};
-	colorSelectRight[] = {0,0,0,1};
-	colorSelect2Right[] = {0,0,0,1};
-	tooltipColorText[] = {1,1,1,1};
-	tooltipColorBox[] = {1,1,1,1};
-	tooltipColorShade[] = {0,0,0,0.65};
-	soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1};
-	class JK_ListScrollBar: JK_ScrollBar
-	{
-		color[] = {1,1,1,1};
-		autoScrollEnabled = 1;
-	};
+    x = 0;
+    y = 0;
+    w = 0.3;
+    h = 0.3;
+    style = 16;
+    font = "PuristaMedium";
+    sizeEx = "(            (            (            ((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    shadow = 0;
+    colorShadow[] = {0,0,0,0.5};
+    colorText[] = {1,1,1,1.0};
+    colorDisabled[] = {1,1,1,0.25};
+    colorScrollbar[] = {1,0,0,0};
+    colorSelect[] = {0,0,0,1};
+    colorSelect2[] = {0,0,0,1};
+    colorSelectBackground[] = {0.95,0.95,0.95,1};
+    colorSelectBackground2[] = {1,1,1,0.5};
+    period = 1.2;
+    colorBackground[] = {0,0,0,0.3};
+    maxHistoryDelay = 1.0;
+    colorPicture[] = {1,1,1,1};
+    colorPictureSelected[] = {1,1,1,1};
+    colorPictureDisabled[] = {1,1,1,0.25};
+    colorPictureRight[] = {1,1,1,1};
+    colorPictureRightSelected[] = {1,1,1,1};
+    colorPictureRightDisabled[] = {1,1,1,0.25};
+    colorTextRight[] = {1,1,1,1};
+    colorSelectRight[] = {0,0,0,1};
+    colorSelect2Right[] = {0,0,0,1};
+    tooltipColorText[] = {1,1,1,1};
+    tooltipColorBox[] = {1,1,1,1};
+    tooltipColorShade[] = {0,0,0,0.65};
+    soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1};
+    class JK_ListScrollBar: JK_ScrollBar
+    {
+        color[] = {1,1,1,1};
+        autoScrollEnabled = 1;
+    };
 };
 
 class JK_RSCListbox_NoBackgroundColor: JK_RSCListBox
@@ -337,7 +337,7 @@ class JK_RSCListbox_NoBackgroundColor: JK_RSCListBox
     w = 4 * GUI_GRID_W;
     h = 2.5 * GUI_GRID_H;
     style = 2;
-	colorText[] = {0,0,0,0};
+    colorText[] = {0,0,0,0};
     colorBackground[] = {0,0,0,0};
     colorActive[] = {0,0,0,0};
 };

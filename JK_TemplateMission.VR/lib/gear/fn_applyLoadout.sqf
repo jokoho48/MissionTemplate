@@ -4,9 +4,9 @@ Idea by Belbo
 adds the loadouts to the specific playable units for the side West
 Call from initPlayerLocal.sqf via:
 [object,true] call JK_loadOut_fnc_applyLoadout;
-	with
-	_this select 0 = object - target the loadout is applied to.
-	_this select 1 = boolean - whether or not the target in _zeus is supposed to be invincible.
+    with
+    _this select 0 = object - target the loadout is applied to.
+    _this select 1 = boolean - whether or not the target in _zeus is supposed to be invincible.
 */
 
 // insert names of new units here in their correspondent Objects:
@@ -61,20 +61,20 @@ _class = "";
 //switch to select the applicable loadout function
 if (!JK_var_gearByClasses) then {
     _class = switch true do {
-	    case (_object in _command): {"command"};
-	    case (_object in _SL): {"leader"};
-	    case (_object in _medics): {"medic"};
-	    case (_object in _AR): {"ARman"};
-	    case (_object in _MG): {"MG"};
-	    case (_object in _assMG): {"assMG"};
-	    case (_object in _AT): {"AT"};
-	    case (_object in _grenadier): {"grenadier"};
-	    case (_object in _soldier): {"Rifleman"};
-	    case (_object in _marksmen): {"marksman"};
-	    case (_object in _spec): {"specialist"};
-	    case (_object in _pilots): {"pilot"};
-	    case (_object in _crew): {"pilot"};
-	    default{""};
+        case (_object in _command): {"command"};
+        case (_object in _SL): {"leader"};
+        case (_object in _medics): {"medic"};
+        case (_object in _AR): {"ARman"};
+        case (_object in _MG): {"MG"};
+        case (_object in _assMG): {"assMG"};
+        case (_object in _AT): {"AT"};
+        case (_object in _grenadier): {"grenadier"};
+        case (_object in _soldier): {"Rifleman"};
+        case (_object in _marksmen): {"marksman"};
+        case (_object in _spec): {"specialist"};
+        case (_object in _pilots): {"pilot"};
+        case (_object in _crew): {"pilot"};
+        default{""};
     };
 };
 if (_class == "" || JK_var_gearByClasses) then {
