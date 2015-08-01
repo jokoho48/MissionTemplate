@@ -22,8 +22,8 @@ Zeus (2)
 
 
 Features verbaut: 
-Military Symbols - GroupId wird nicht angezeigt 
-ArmA 3 Basic Revive System  
+Military Symbols - GroupId wird nicht angezeigt   
+ArmA 3 Basic Revive System    
 AME - Nametags by NetFusion && joko // Jonas  
 JK Settings - by joko // Jonas  
 TvT Mission Template Script - by joko // Jonas  
