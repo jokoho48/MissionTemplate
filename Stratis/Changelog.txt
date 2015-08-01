@@ -1,0 +1,160 @@
+"
+v1.11<br/>
+- Add Logistic function<br/>
+- Add LZ 3D Marker to Landing Zones<br/>
+- Add function for disable Reveal Mines Placed by Zeus<br/>
+- Add Group Management Module to NameTags<br/>
+- Add X39 Vehicle Crew List<br/>
+- Add ACE,AGM and CSE to NameTag Ignore List<br/>
+- Reorder Folder Structure<br/>
+- Add View Distance Settings now Persistent<br/>
+- Massive Performance Improvements<br/>
+- Tweak NameTags now show only Group Name if player not in Group<br/>
+- Tweak NameTags are shown for and form Civ<br/>
+- Tweak if no Class Applied to NameTags None Classes not Displayed<br/>
+- Tweak add EventHandler for Zeus Sync<br/>
+- Fix BIS Revive<br/>
+<br/>
+v1.10<br/>
+- Rework massive Gear System<br/>
+- Localize NameTags<br/>
+- Add Possibility to Change Viewdistance with writing in Edits<br/>
+- General Bug Fixes and Performance Improvements<br/>
+<br/>
+v1.9<br/>
+- Add Possibility to Add CODE to JK_Core_Interaction_AddAction for Parameter Name<br/>
+- Add Name to Drag Action<br/>
+- Add GeCo Information<br/>
+- Add GeCo TS IP to Briefing<br/>
+- Rework ChooseGear for better Performance and save memory space<br/>
+- Rework FHQ TT for better Performance<br/>
+- Rework TvT Task Module for Better Performace and save memory<br/>
+- Localize almost Every Module<br/>
+- Fix Settings Dialog for Smaller Screens<br/>
+- Fix GameMaster Module End Mission<br/>
+- Move Medical Drag and Drop From JK/Core to AME/DragDrop/fn_preInit<br/>
+- Fix many Bugs in TvT Module<br/>
+- Fix Respawn Module for All Sides<br/>
+<br/>
+v1.8<br/>
+- Add Opfor Playable Side with Player and Units<br/>
+- Add Independent Playable Side with Player and Units<br/>
+- Add New Written TvT Game Mode(Optional enable and Disable)<br/>
+- Add AAF Gear as Basic Gear for Independent<br/>
+- Add Welcome Message<br/>
+- Add Possibility to Create Different Create with Different Gear(Blufor Only Configured Currently)<br/>
+- Add Possibility for Crate Script to add Items for Different Sides<br/>
+- Add NameTags TvT Compatibility<br/>
+- Add Changelog to Credits inGame<br/>
+- Add FHQ TaskTracker<br/>
+- Add to TKP Multiple Bases(Max 3)<br/>
+- Add Possibility for Multiple Base in 3rdPerson script<br/>
+- Fix Error in selectGear<br/>
+- Fix Some small Errors<br/>
+<br/>
+v1.7<br/>
+- Add Pilot Classes<br/>
+- Fix if Side ! in ['OPFOR','WEST','GUER']<br/>
+<br/>
+v1.6<br/>
+- Add Ability to Change Side to Loadoutscript(Gear only copied from Blufor to Opfor and Indipendet. Need to Configure)<br/>
+- Fix Settings Menu call Position<br/>
+<br/>
+v1.5<br/>
+- Tweak NameTags<br/>
+- Performance Tweak NameTags<br/>
+- Rework some Folder structure<br/>
+<br/>
+v1.4<br/>
+- Add New View Distance Script<br/>
+- Add NameTags Teams<br/>
+- Add NameTags Team Dialog<br/>
+- Add Parachute to Crates<br/>
+- Rename All Crates and Fixing Spelling Issue<br/>
+- Fixing TK Protection WM Question<br/>
+- Remove TAW Viewdistance<br/>
+<br/>
+v1.3<br/>
+- Fix Bug that Static Weapons with Players in can be Draged<br/>
+- Rework Group Size to 9<br/>
+- Fix Unconscious Rearming<br/>
+<br/>
+v1.2<br/>
+- Add Class of Unit in NameTags(if Unconscious this are not Shown)<br/>
+- Update/Fix GM Module<br/>
+- Fix Massive Bug with Medical Module form BIS with first Death are Instant Death<br/>
+- Fix Problem that 'name player' don`t work on Dead Persons and Drops Errors<br/>
+- Fix Spelling Issues<br/>
+<br/>
+v1.1<br/>
+- Fixing Stuff form ArmA 3 Update<br/>
+- Add that Zeus CleanUp and Zeus Sync only run on server<br/>
+<br/>
+v1.0<br/>
+- Add Some more Customising Options in Init<br/>
+<br/>
+v0.9<br/>
+- Rework Gear Scripts<br/>
+<br/>
+v0.8.1(HotFix)<br/>
+- Fix Zeus_Actions Variable<br/>
+- Add WreckManager<br/>
+<br/>
+v0.8<br/>
+- Add More Customising Option in Init<br/>
+- Tweak xReload and Vehicle Status UI<br/>
+- Update MPS to Newest Version<br/>
+- Remove Obsolete Comments<br/>
+- Remove Briefing Scripts<br/>
+<br/>
+v0.7.1<br/>
+- Fix Path for Icons<br/>
+<br/>
+v0.7<br/>
+- Add Icon in NameTags if Unconscious<br/>
+<br/>
+v0.6<br/>
+- Remove IgiLoad<br/>
+- Change from Normal Var Request to Preprocessor Commands<br/>
+- Drag and Drop Finally Fixed<br/>
+- NameTags Finally Fixed<br/>
+- Revive Template Finally Fixed<br/>
+- Fix Drag ChooseLoadout Boxes<br/>
+- Change Some If to Preprocessor<br/>
+- Add Some Comments for Missions Builder<br/>
+<br/>
+v0.5<br/>
+- Add Info to NameTags if Player is unconscious<br/>
+- Fix NameTags Respawn/Killed Problem<br/>
+- Fix Respawn With Gear Problem<br/>
+- Possible Fix for DragNDrop<br/>
+<br/>
+v0.4<br/>
+- Add GeCo Admin to TK Protection Whitelist<br/>
+- Add Drag and Drop for unconscious(Need to Test)<br/>
+- Add Respawn with Selected Gear<br/>
+<br/>
+v0.3<br/>
+- Add Bipods<br/>
+- Add Icons to AME NameTags<br/>
+- Fixing NameTags Loading<br/>
+- Fix Respawn EventHandler for ChooseLoadout<br/>
+<br/>
+v0.2<br/>
+- Add ChooseLoadout<br/>
+- Remove VAS<br/>
+<br/>
+v0.1<br/>
+- Add Credits Script<br/>
+- Add AME NameTags<br/>
+- Add ArmA 3 Endgame Revive<br/>
+- Add all Functions to cfgFunctions<br/>
+- Rewrite GM Function<br/>
+- Remove Repetitive Zeus Script<br/>
+- Remove FAR Revive<br/>
+- Remove IgiLoad Init Message<br/>
+- Disable VAS Respawn With Gear<br/>
+<br/>
+v0.0<br/>
+- Initial Release<br/>
+"

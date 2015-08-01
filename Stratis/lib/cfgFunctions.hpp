@@ -1,0 +1,7 @@
+#include "Core\cfgFunctions.hpp"
+#include "Settings\cfgFunctions.hpp"
+#include "TvT\cfgFunctions.hpp"
+#include "TT\cfgFunctions.hpp"
+#include "gear\cfgFunctions.hpp"
+#include "repair\cfgFunctions.hpp"
+#include "Logistic\cfgFunctions.hpp"

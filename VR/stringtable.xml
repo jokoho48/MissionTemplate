@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="GeCo">
+    <Package name="GeCo_Welcome">
+
+        // Welcome Message
+        <Key ID="STR_GECO_WELCOME_MESSAGE_1">
+            <German>Willkommen beim der GeCo </German>
+            <English>Welcome to the GeCo</English>
+            <Original>Welcome to the GeCo</Original>
+        </Key>
+        <Key ID="STR_GECO_WELCOME_MESSAGE_2">
+            <German>Schaue dich mal bei uns auf dem Teamspeak vorbei: </German>
+            <English>Please Visit our Teamspeak:</English>
+            <Original>Please Visit our Teamspeak:</Original>
+        </Key>
+
+
+        // Logistic and Medical
+        <Key ID="STR_GECO_JK_DRAG_MED">
+            <German>%1 Ziehen</German>
+            <English>Drag %1</English>
+            <Original>Drag %1</Original>
+        </Key>
+        <Key ID="STR_GECO_JK_DRAG">
+            <German>%1 Ziehen</German>
+            <English>Drag %1</English>
+            <Original>Drag %1</Original>
+        </Key>
+        <Key ID="STR_GECO_JK_DROP">
+            <English>Drop</English>
+            <German>Loslassen</German>
+            <Original>Drop</Original>
+        </Key>
+        <Key ID="STR_GECO_JK_LOADIN">
+            <English>Load Item in %1</English>
+            <German>Lade Gegenstand in %1</German>
+            <Original>Load Item in %1</Original>
+        </Key>
+        <Key ID="STR_GECO_JK_LOADOUT">
+            <English>Unload %1 out %2</English>
+            <German>Entlade %1 aus %2</German>
+            <Original>Unload %1 out %2</Original>
+        </Key>
+        <Key ID="STR_GECO_JK_TOHEAVY">
+            <English>The box is %1 KG to heavy</English>
+            <German>Die Kiste ist %1 KG zu Schwer</German>
+            <Original>The box is %1 KG to heavy</Original>
+        </Key>
+
+
+        // LoadOuts
+        <Key ID="STR_GECO_GEAR_COMMAND">
+            <English>Command</English>
+            <German>Kommander</German>
+            <Original>Command</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_LEADER">
+            <English>Team Leader</English>
+            <German>Truppführer</German>
+            <Original>Team Leader</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_MEDIC">
+            <English>Medic</English>
+            <German>Sanitäter</German>
+            <Original>Medic</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_ARMAN">
+            <English>Automaitc-Rifleman</English>
+            <German>Automatik-Schütze</German>
+            <Original>Automaitc-Rifleman</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_MG">
+            <English>MG-Gunner</English>
+            <German>MG-Schütze</German>
+            <Original>MG-Gunner</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_ASSMG">
+            <English>MG-Assistent</English>
+            <German>MG-Assistent</German>
+            <Original>MG-Assistent</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_AT">
+            <English>AT-Gunner</English>
+            <German>AT-Schütze</German>
+            <Original>AT-Gunner</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_GRENADIER">
+            <English>Grenadier</English>
+            <German>Grenadier</German>
+            <Original>Grenadier</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_RIFLEMAN">
+            <English>Rifleman</English>
+            <German>Schütze</German>
+            <Original>Rifleman</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_MARKSMAN">
+            <English>Marksman</English>
+            <German>Gruppenscharfschütze</German>
+            <Original>Marksman</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_SPECIALIST">
+            <English>Specialist</English>
+            <German>Spezialist</German>
+            <Original>Specialist</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_PILOT">
+            <English>Pilot</English>
+            <German>Pilot</German>
+            <Original>Pilot</Original>
+        </Key>
+        <Key ID="STR_GECO_GEAR_CREW">
+            <English>Crew Man</English>
+            <German>Fahrzeug Besatzung</German>
+            <Original>Crew Man</Original>
+        </Key>
+
+        // TvT
+        <Key ID="STR_GECO_TVT_TAKEPOINT">
+            <English>Take Point %1</English>
+            <German>Nehme Punkt %1 Ein</German>
+            <Original>Take Point %1</Original>
+        </Key>
+        <Key ID="STR_GECO_TVT_TAKEBASESHORT">
+            <English>Take Base %1</English>
+            <German>Nehme Basis %1 Ein</German>
+            <Original>Take Base %1</Original>
+        </Key>
+        <Key ID="STR_GECO_TVT_TAKEBASELONG">
+            <English>Take Base %2 for %1</English>
+            <German>Nehmen sie Basis %2 Ein für %1</German>
+            <Original>Take Base %2 for %1</Original>
+        </Key>
+
+        // Repair
+        <Key ID="STR_GECO_REPAIR_DAMAGE">
+            <English>Current damage:</English>
+            <German>Aktueller Schaden:</German>
+            <Original>Current damage:</Original>
+        </Key>
+        <Key ID="STR_GECO_REPAIR_FUEL">
+            <English>Current fuel:</English>
+            <German>Aktueller Tankstand:</German>
+            <Original>Current fuel:</Original>
+        </Key>
+        <Key ID="STR_GECO_REPAIR_MAG">
+            <English>Current Magazine Reloading:</English>
+            <German>Aktuell nachzuladendes Magazin:</German>
+            <Original>Current Magazine Reloading:</Original>
+        </Key>
+        <Key ID="STR_GECO_REPAIR_NOMAG">
+            <English>None Magazines Used</English>
+            <German>Kein Magazine Verbraucht</German>
+            <Original>None Magazines Used</Original>
+        </Key>
+
+        <Key ID="STR_GECO_ONLYPILOTS">
+            <English>Only Pilots are allowed to fly.</English>
+            <Original>Only Pilots are allowed to fly.</Original>
+            <German>Nur Piloten Dürfen Fliegen</German>
+        </Key>
+
+
+        // GeCo Settings
+        <Key ID="STR_GECO_OPENSETTINGS">
+            <English>Open GeCo Settings</English>
+            <German>GeCo Einstellungen Öffnen</German>
+            <Original>Open GeCo Settings</Original>
+        </Key>
+        <Key ID="STR_GECO_GM_GroupJoined">
+            <English>Join Group is Now %1</English>
+            <German>Du bist der Gruppe von %1 beigetretten</German>
+            <Original>Join Group is Now %1</Original>
+        </Key>
+        <Key ID="STR_GECO_GM_JoinGroup">
+            <English>Join Group is Now %1</English>
+            <German>Gruppen beitritts Modus ist nun %1</German>
+            <Original>Join Group is Now %1</Original>
+        </Key>
+        <Key ID="STR_GECO_GM_Enabled">
+            <English>Enabled</English>
+            <German>Aktiviert</German>
+            <Original>Enabled</Original>
+        </Key>
+        <Key ID="STR_GECO_GM_Disabled">
+            <English>Disabled</English>
+            <German>Deaktiviert</German>
+            <Original>Disabled</Original>
+        </Key>
+        <Key ID="STR_GECO_LeaveGroup">
+            <English>You Leave your Group</English>
+            <German>Du hast deine Gruppe Verlassen</German>
+            <Original>You Leave your Group</Original>
+        </Key>
+        <Key ID="STR_GECO_TakeLeader">
+            <English>You take leadership</English>
+            <German>Du hast die Gruppenführung übernommen</German>
+            <Original>You take leadership</Original>
+        </Key>
+
+        <Key ID="STR_GECO_NAMETAGS_YOURENOW">
+            <English>You are now in Team %1</English>
+            <Original>You are now in Team %1</Original>
+            <German>Du bist nun in Team %1</German>
+        </Key>
+        <Key ID="STR_GECO_NAMETAGS_YOUREDNOW">
+            <English>You are already in Team %1</English>
+            <Original>You are already in Team %1</Original>
+            <German>Du bist schon nun in Team %1</German>
+        </Key>
+
+        <Key ID="STR_GECO_NAMETAGS_RED">
+            <English>Red</English>
+            <Original>Red</Original>
+            <German>Rot</German>
+        </Key>
+        <Key ID="STR_GECO_NAMETAGS_GREEN">
+            <English>Green</English>
+            <Original>Green</Original>
+            <German>Grün</German>
+        </Key>
+        <Key ID="STR_GECO_NAMETAGS_YELLOW">
+            <English>Yellow</English>
+            <Original>Yellow</Original>
+            <German>Gelb</German>
+        </Key>
+        <Key ID="STR_GECO_NAMETAGS_BLUE">
+            <English>Blue</English>
+            <Original>Blue</Original>
+            <German>Blau</German>
+        </Key>
+        <Key ID="STR_GECO_NAMETAGS_MAIN">
+            <English>White</English>
+            <Original>White</Original>
+            <German>Weiß</German>
+        </Key>
+
+        //-- Heli Please Wait
+        <Key ID="STR_GECO_NAMETAGS_HELI">
+            <English>Please wait %1 will soon reoccupied</English>
+            <Original>Please wait %1 will soon reoccupied</Original>
+            <German>Bitte warten sie, %1 wird bald wieder besetzt</German>
+        </Key>
+        <Key ID="STR_GECO_NAMETAGS_LZ">
+            <English>Landing Zone %1</English>
+            <Original>Landing Zone %1</Original>
+            <German>Lande Zone %1</German>
+        </Key>
+    </Package>
+</Project>
