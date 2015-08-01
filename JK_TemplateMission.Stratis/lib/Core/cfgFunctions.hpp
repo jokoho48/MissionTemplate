@@ -11,6 +11,11 @@ class JK_Core
         class Interaction_loop;
         class Interaction_addAction;
         class draw3D;
-        class 
+        class addKeyDownEH;
+        class addMissionEvent;
+        class initKeyDownEH { preInit = 1; };
+        class removeKeyDownEH;
+        class triggerMissionEventhandler;
+
     };
 };
