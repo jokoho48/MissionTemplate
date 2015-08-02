@@ -4,7 +4,7 @@ class JK_Core
     {
         file = "lib\Core";
         class gm { postInit = 1; };
-        class crate {};
+        class crate;
         class getWeight;
         class preInit { preInit = 1; };
         class inRange;
@@ -16,6 +16,5 @@ class JK_Core
         class initKeyDownEH { preInit = 1; };
         class removeKeyDownEH;
         class triggerMissionEventhandler;
-
     };
 };

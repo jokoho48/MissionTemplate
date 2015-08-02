@@ -1,20 +1,20 @@
 /*
-	Author: NetFusion
+    Author: NetFusion
 
-	Description:
-	Continuously checks whether an action should be added to the cursorTarget.
+    Description:
+    Continuously checks whether an action should be added to the cursorTarget.
 
-	Parameter(s):
-	- 
+    Parameter(s):
+    -
 
     Remarks:
     * Should only be called once per mission.
-    
-	Returns:
-	-
 
-	Example:
-	true spawn JK_Core_fnc_Interaction_loop;
+    Returns:
+    -
+
+    Example:
+    true spawn JK_Core_fnc_Interaction_loop;
 */
 
 _text = "";
