@@ -10,8 +10,7 @@ Call from initPlayerLocal.sqf via:
 */
 
 ///// No editing necessary below this line /////
-private ["_target"];
-_target = param[0,player];
+params [["_target", player, [objNull]]];
 
 //call for the loadout function
 [_target] call jk_loadOut_fnc_applyLoadout;

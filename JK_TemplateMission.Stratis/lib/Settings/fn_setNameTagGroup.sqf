@@ -1,17 +1,17 @@
 /*
-	Author: joko // Jonas
+    Author: joko // Jonas
 
-	Description:
+    Description:
     Set Group Name for All Playable Units
 
-	Parameter(s):
-	-
+    Parameter(s):
+    -
 
-	Returns:
-	-
+    Returns:
+    -
 
-	Example:
-	[] call JK_Settings_fnc_setNameTagGroup;
+    Example:
+    [] call JK_Settings_fnc_setNameTagGroup;
 */
 
 if (!isServer) exitWith {};
