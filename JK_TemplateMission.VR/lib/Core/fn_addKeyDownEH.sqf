@@ -14,5 +14,5 @@
  * Return:
  *
  */
-
-JK_var_KeyDownEvents pushBack [_this select 0, _this select 2, _this select 3, _this select 2];
+params ["_name", "_code", "_dikKey", "_modifier"];
+JK_var_KeyDownEvents pushBack [_name, _dikKey, _modifier, _code];

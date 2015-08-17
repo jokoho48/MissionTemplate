@@ -8,6 +8,7 @@ if (isDedicated || !hasInterface) exitWith {};
     0,
     "!(isNull (player getVariable ['JK_DragDrop_Item', objNull]))",
     {
+        private ["_draggedObject", "_position"];
         _draggedObject = player getVariable ["JK_DragDrop_Item", objNull];
 
         player playAction "released";
@@ -35,7 +36,8 @@ if (isDedicated || !hasInterface) exitWith {};
     10,
     "!(isNull (player getVariable ['JK_DragDrop_Item', objNull]))",
     {
-        _Vehicle = _this select 0;
+        private ["_draggedObject", "_ItemArray"];
+        params ["_vehicle"];
         _draggedObject = player getVariable ["JK_DragDrop_Item", objNull];
         player playAction "released";
         _draggedObject enableSimulationGlobal false;
@@ -44,9 +46,9 @@ if (isDedicated || !hasInterface) exitWith {};
         detach _draggedObject;
         [[_draggedObject, true], "hideObjectGlobal", false, false, true] call BIS_fnc_MP;
         _draggedObject setPos [-10000,-10000,100000];
-        _ItemArray = _Vehicle getVariable ["JK_Loadedin", []];
+        _ItemArray = _vehicle getVariable ["JK_Loadedin", []];
         _ItemArray pushBack _draggedObject;
-        _Vehicle setVariable ["JK_Loadedin", _ItemArray];
+        _vehicle setVariable ["JK_Loadedin", _ItemArray];
         player setVariable ["JK_DragDrop_Item",objNull];
     }
 ] call JK_Core_fnc_Interaction_addAction;
@@ -57,17 +59,19 @@ if (isDedicated || !hasInterface) exitWith {};
     10,
     "isNull (player getVariable ['JK_DragDrop_Item', objNull]) && !((_target getVariable ['JK_Loadedin', []]) isEqualTo [])",
     {
-        _draggedObjectArray = (_this select 0) getVariable ["JK_Loadedin",[ObjNull]];
+        private ["_draggedObjectArray", "_draggedObject", "_attachPoint", "_item"];
+        params ["_vehicle"];
+        _draggedObjectArray = _vehicle getVariable ["JK_Loadedin",[ObjNull]];
         _draggedObject = _draggedObjectArray deleteAt 0;
         _currentWeight = _draggedObject call JK_Core_fnc_GetWeight;
-        (_this select 0) setVariable ["JK_Loadedin",_draggedObjectArray,true];
+        _vehicle setVariable ["JK_Loadedin",_draggedObjectArray,true];
         player setVariable ["JK_DragDrop_Item", _draggedObject, true];
         _draggedObject setVariable ["JK_DragDrop_Player", player, true];
         _attachPoint = [0, 1.3, 0.5];
         player forceWalk true;
         removeMissionEventHandler ["Draw3D",JK_var_GetInVehiclePFH];
         [[_draggedObject, true], "hideObjectGlobal", false, false, true] call BIS_fnc_MP;
-        if (_item isKindOf "StaticWeapon" || _currentWeight >= __MAXWEIGHT /2) then {
+        if (_draggedObject isKindOf "StaticWeapon" || _currentWeight >= __MAXWEIGHT /2) then {
             player playActionNow "grabDrag";
             waitUntil {animationState player in __DRAGANIMSTATE};
         } else {

@@ -1,16 +1,16 @@
 /*
-	Author: joko // Jonas
+    Author: joko // Jonas
 
-	Description:
+    Description:
 
 
-	Parameter(s):
-	0:
-	Returns:
-	-
+    Parameter(s):
+    0:
+    Returns:
+    -
 
-	Example:
-	[] call JK_Settings_fnc_setNametag;
+    Example:
+    [] call JK_Settings_fnc_setNametag;
 */
 
 _mode = _this select 0;
