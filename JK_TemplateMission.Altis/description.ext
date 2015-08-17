@@ -27,15 +27,15 @@ class cfgDebriefing {
     class JKEnd
     {
         title = "Missions Ende";
-        description = "Diese Mission ist nun leider zu Ende. Wir würden euch bitten, euch noch mal in der Lobby zu sammeln, damit wir die Nachbesprechung anfangen können. Mit freundlichen Grüßen das Server Team";
+        description = "Diese Mission ist nun leider zu Ende. Mit freundlichen Grüßen das Server Team";
         picture = "data\logo.paa";
     };
 };
 class header
 {
    gameType = "ZCOOP";
-   minPlayers = 2;
-   maxPlayers = 79;
+   minPlayers = 1;
+   maxPlayers = 233;
 };
 
 //-------------------------------------------------------------------------------------------------
