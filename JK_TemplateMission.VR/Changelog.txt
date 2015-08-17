@@ -1,4 +1,11 @@
 "
+v1.12<br/>
+- Update all Scripts and Remove all _this select N Commands</br>
+- Improve Render Distance for LZ Marker </br>
+- Add Mission EH functions</br>
+- Add Mission Key EH functions</br>
+- Fix a Bug in GM Module</br>
+
 v1.11<br/>
 - Add Logistic function<br/>
 - Add LZ 3D Marker to Landing Zones<br/>
