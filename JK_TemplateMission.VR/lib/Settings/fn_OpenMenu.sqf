@@ -1,16 +1,16 @@
 /*
-	Author: joko // Jonas
+    Author: joko // Jonas
 
-	Description:
-	
+    Description:
 
-	Parameter(s):
-	0: 
-	Returns:
-	- 
 
-	Example:
-	[] call JK_Settings_fnc_OpenMenu;
+    Parameter(s):
+    0:
+    Returns:
+    -
+
+    Example:
+    [] call JK_Settings_fnc_OpenMenu;
 */
 if(!createDialog "JK_Settings_Dialog") exitWith {hint "Something went wrong, the menu won't open?"};
 disableSerialization;

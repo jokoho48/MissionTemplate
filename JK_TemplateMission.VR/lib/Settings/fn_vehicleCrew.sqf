@@ -24,7 +24,7 @@
  *            @Action "CreateDisplay", "DestroyDisplay":
  *                []
  */
- 
+
 //Error Defines
 #define ERROR_COULD_NOT_CREATE_DISPLAY "Could not create display"
 #define ERROR_UNKNOWN_ACTION "Unknown action"
@@ -42,13 +42,13 @@
 //Macros
 #define uiVariable(VAR) (uiNamespace getVariable [VAR, displayNull])
 
- 
+
 private ["_action", "___returnValue___"];
 _thisOriginal =_this;
 _action = _this select 0;
 _this = _this select 1;
 ___returnValue___ = false;
- 
+
 switch(_action) do
 {
     case "init": {
@@ -64,7 +64,7 @@ switch(_action) do
             (findDisplay 46) displayAddEventHandler ["KeyDown", format["(['EH_KeyDown', _this] call (missionNamespace getVariable %1))", str _fnc_scriptName]],
             (findDisplay 46) displayAddEventHandler ["KeyUp", format["(['EH_KeyUp', _this] call (missionNamespace getVariable %1))", str _fnc_scriptName]]
         ];
-        
+
         //Create the display element
         ["CreateDisplay", nil] call (missionNamespace getVariable _fnc_scriptName);
 
@@ -74,7 +74,7 @@ switch(_action) do
         //Clear display element and after that exit this function if it is not in our key list
         _this deleteAt 0;
         if(!(_this in X39_XLib_var_VehicleDisplay_ActionKeys)) exitWith {};
-        
+
         //Check if the vehicleDisplayUI has to be hidden
         if(ctrlShown uiVariable("X39_XLib_var_VehicleDisplay_UI")) then
         {
@@ -86,7 +86,7 @@ switch(_action) do
         //Clear display element and after that exit this function if it is not in our key list
         _this deleteAt 0;
         if(!(_this in X39_XLib_var_VehicleDisplay_ActionKeys)) exitWith {};
-        
+
         private["_crew", "_index"];
         //check if we are currently in a vehicle and leave the script if we are not
         if(vehicle X39_XLib_var_VehicleDisplay_WatchedUnit == X39_XLib_var_VehicleDisplay_WatchedUnit) exitWith
@@ -105,7 +105,7 @@ switch(_action) do
             X39_XLib_var_VehicleDisplay_LastUnitsInVehicle = _crew;
             lbClear uiVariable("X39_XLib_var_VehicleDisplay_UI");
             {
-                
+
                 _index = uiVariable("X39_XLib_var_VehicleDisplay_UI") lbAdd name (_x select 0);
                 switch(toLower (_x select 1)) do
                 {

@@ -1,5 +1,0 @@
-﻿// My Stuff
-2. Remove Scripts in Mission.sqm
-3. Add Own Blufore/Opfor/Greenfor Tracker
-5. Add Own Vehicle Respawn Script
-6. Remove all Syncronisations in mission

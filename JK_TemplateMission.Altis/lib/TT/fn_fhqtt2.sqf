@@ -28,7 +28,7 @@
  *
  *
  * Commonly used examples:
- * 
+ *
  * 1. Assign a task as current task:
  * ["taskDestroy", "assigned"] call FHQ_TTI_setTaskState;
  *

@@ -18,26 +18,26 @@ params["_mode","_value"];
 //View Distance
 if (_mode isEqualTo "man") exitwith {
     jk_var_VDman = _value;
-    profileNameSpace setVariable ["JK_JK_viewDistanceMan",jk_var_VDman];
+    profileNameSpace setVariable ["JK_viewDistanceMan",jk_var_VDman];
     call JK_Settings_fnc_updateVD;
     call JK_Settings_fnc_UpdateUI;
 };
 if (_mode isEqualTo "car") exitwith {
     jk_var_VDcar = _value;
-    profileNameSpace setVariable ["JK_JK_viewDistanceCar",jk_var_VDcar];
+    profileNameSpace setVariable ["JK_viewDistanceCar",jk_var_VDcar];
     call JK_Settings_fnc_updateVD;
     call JK_Settings_fnc_UpdateUI;
 };
 if (_mode isEqualTo "air") exitwith {
     jk_var_VDair = _value;
-    profileNameSpace setVariable ["JK_JK_viewDistanceAir",jk_var_VDair];
+    profileNameSpace setVariable ["JK_viewDistanceAir",jk_var_VDair];
     call JK_Settings_fnc_updateVD;
     call JK_Settings_fnc_UpdateUI;
 };
 //Object View Distance
 if (_mode isEqualTo "obj") exitwith {
     jk_var_VDobj = _value;
-    profileNameSpace setVariable ["JK_JK_viewDistanceObj",jk_var_VDobj];
+    profileNameSpace setVariable ["JK_viewDistanceObj",jk_var_VDobj];
     call JK_Settings_fnc_updateVD;
     call JK_Settings_fnc_UpdateUI;
 };

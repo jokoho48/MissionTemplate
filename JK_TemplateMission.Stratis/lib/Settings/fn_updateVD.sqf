@@ -1,16 +1,16 @@
 /*
-	Author: joko // Jonas
+    Author: joko // Jonas
 
-	Description:
-	
+    Description:
 
-	Parameter(s):
-	0: 
-	Returns:
-	- 
 
-	Example:
-	[] call JK_Settings_fnc_updateVD;
+    Parameter(s):
+    0:
+    Returns:
+    -
+
+    Example:
+    [] call JK_Settings_fnc_updateVD;
 */
 switch (true) do {
     case ((vehicle player ) isKindOf "Man"): {

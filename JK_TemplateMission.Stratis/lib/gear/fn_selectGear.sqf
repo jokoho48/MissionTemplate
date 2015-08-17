@@ -13,7 +13,7 @@
     Example:
     [player,"GearName"] call JK_loadOut_fnc_selectGear;
 */
-params["_unit","_class"];
+params["_unit", "_class"];
 
 if (rating _unit >= 400) then {
     _unit addrating (floor (rating - 600)));

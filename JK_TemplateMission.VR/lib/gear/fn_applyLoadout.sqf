@@ -54,10 +54,11 @@ _crewClass = ["B_crew_F","I_crew_F","O_crew_F"];
 
 ///// No editing necessary below this line /////
 private ["_object","_target"];
-_target = [_this, 0, player] call BIS_fnc_param;
+params [["_target", player, [objNull]]];
 _object = str _target;
 
 _class = "";
+
 //switch to select the applicable loadout function
 if (!JK_var_gearByClasses) then {
     _class = switch true do {

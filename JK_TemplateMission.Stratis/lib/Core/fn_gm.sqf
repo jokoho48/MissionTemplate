@@ -71,10 +71,10 @@ JK_fnc_gm = {
 };
 
 JK_fnc_removeGMActions = {
-    _unit = _this select 1;
+    params ["_unit"];
     {
         _unit removeAction _x;
-    }count [_action1,_action2,_action3,_action4,_action5];
+    } count [_action1,_action2,_action3,_action4,_action5];
 };
 [] spawn {
     waitUntil {!(isNil "JK_var_Zeus_Actions_Player") && !(isNil "JK_var_Zeus_Actions")};

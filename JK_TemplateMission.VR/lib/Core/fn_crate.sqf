@@ -126,7 +126,6 @@ if (true) then {
     call compile _call;
 } count ["Blufor","Indiependent","Opfor"];
 //---------Dont Edit Below This Line---------//
-_count = 0;
 {
     if (isNull _x) exitwith {};
 
@@ -163,12 +162,7 @@ _count = 0;
                 _create addBackpackCargoGlobal _x;
         } count _backpacks;
     };
-    _count = _count + 1;
-
     false
 } count _this;
-if (JK_debug) then {
-    diag_log format["%1 Crates are Filled by joko Crate Script",_count];
-};
 
 if (true) exitWith {};

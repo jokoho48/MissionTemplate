@@ -7,8 +7,8 @@ define per cfgFunctions or from init.sqf or initPlayerLocal.sqf as early as poss
 call JK_loadOut_fnc_gear;
 */
 
-private ["_unit","_uniform","_headgear","_vest","_backpack","_count"];
-_unit = _this select 0;
+private ["_uniform", "_headgear", "_vest", "_backpack", "_count"];
+params ["_unit"];
 
 //a lot of arrays
 _medicBackPacks = ["B_AssaultPack_rgr_Medic","B_FieldPack_ocamo_Medic","B_FieldPack_oucamo_Medic","B_AssaultPack_rgr_ReconMedic"];

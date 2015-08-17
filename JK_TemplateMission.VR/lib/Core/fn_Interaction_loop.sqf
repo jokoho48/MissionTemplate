@@ -1,29 +1,29 @@
 /*
-    Author: NetFusion
+	Author: NetFusion
 
-    Description:
-    Continuously checks whether an action should be added to the cursorTarget.
+	Description:
+	Continuously checks whether an action should be added to the cursorTarget.
 
-    Parameter(s):
-    -
+	Parameter(s):
+	-
 
     Remarks:
     * Should only be called once per mission.
 
-    Returns:
-    -
+	Returns:
+	-
 
-    Example:
-    true spawn JK_Core_fnc_Interaction_loop;
+	Example:
+	true spawn JK_Core_fnc_Interaction_loop;
 */
 
 _text = "";
 _lastTarget = cursorTarget;
 player setVariable ["JK_LastTarget",_lastTarget,true];
 {
-    _onObject = _x select 0;
+    params ["_onObject", "_text"];
+    _text = (call (_text));
     _objActions = _lastTarget getVariable ["JK_Core_Interaction_Actions", []];
-    _text = (call (_x select 1));
     if (!(_x in _objActions)) then {
         if (typeName _onObject == "STRING") then {
             if (_lastTarget isKindOf _onObject) then {

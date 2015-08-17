@@ -12,12 +12,15 @@
  * Array with Boolean if KeyDown is Removed
  *
  */
- private["_return"]
+ private ["_return", "_deleted"];
+
+_deleted = 0;
+
 {
-    private "_currentName"
-    _currentName = _x select 0;
+    params ["_currentName"];
     if (_currentName in _this) then {
-        _this set[_this find (JK_var_KeyDownEvents deleteAt _foreachindex) select 0,true];
+        _this set[_this find (JK_var_KeyDownEvents deleteAt _foreachindex + _deleted) select 0, true];
+        _deleted = _deleted + 1;
     };
 } forEach JK_var_KeyDownEvents;
 

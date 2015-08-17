@@ -1,6 +1,6 @@
 // by Astavinu edit by joko // Jonas
 private "_text";
-params["_object","_msg"];
+params["_object", "_msg"];
 _text = format["<img image='%1' size='2' align='left'/>", getText(configFile >> "cfgVehicles" >> typeOf _object >> "picture")];
 _text = _text + format ["<t color='#ff0000' size='1.2' shadow='1' shadowColor='#000000' align='center'>%1</t><br/>", getText(configFile >> "cfgVehicles" >> typeOf _object >> "displayName")];
 _text = _text + "<t height='0.2'> </t><br/>";

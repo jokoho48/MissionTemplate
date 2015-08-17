@@ -59,7 +59,7 @@ if (!surfaceIsWater _playerPos) then {
 
 _targetPos = getPos (JK_LZ_Marker select 0);
 _distance = _targetPos distance _playerPos;
-if (_distance > 100) exitWith {};
+if (_distance > 300) exitWith {};
 {
     _target = _x;
     _targetPos = getPos _target;
