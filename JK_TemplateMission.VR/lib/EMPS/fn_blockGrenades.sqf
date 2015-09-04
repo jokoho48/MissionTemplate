@@ -7,5 +7,5 @@
     Parameter(s):
 
     Example:
-    [Box1,Box2] call JK_loadOut_Gear_fnc_selectGear;
+    [Box1,Box2] call JK_EMPS_fnc_BlockGrenades;
 */

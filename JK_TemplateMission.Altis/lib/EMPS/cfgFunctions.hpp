@@ -6,5 +6,7 @@ class JK_EMPS
         class init { postInit = 1; };
         class inBase;
         class blockGrenades;
+        class log;
+        class newPlayer;
     };
 };
