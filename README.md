@@ -36,13 +36,13 @@ Gruppen Aufstellung:
 - Automatic-Schütze    
 - MG-Schütze    
 - MG-Hilfsschütze    
-- AT-SChütze     
+- AT-Schütze     
 - Gruppenscharfschütze     
 - Grenadier     
 - Schütze      
 
 
-Features verbaut: 
+Features verbaut:   
 Military Symbols - GroupId wird nicht angezeigt   
 ArmA 3 Basic Revive System    
 AME - Nametags by NetFusion && joko // Jonas  
