@@ -112,4 +112,4 @@ while {(fuel _object < 0.99 || damage _object > 0.001) } do {
     if (!alive _object || !((_posObject distance (getPos _object)) < _maxDistance)) exitWith {_endMsg = "Servicing cancelled";};
 };
 
-[_object, _endMsg] call repair_fnc_uiVehicleStatus;
+[_object, _endMsg] call JK_repair_fnc_uiVehicleStatus;
