@@ -1,7 +1,4 @@
-
-
-
-params["_name","_target","_side"]
+params["_name","_target","_side"];
 //Show Update Stats
 _text = format["<img size= '3' shadow='false' image='a3\ui_f\data\map\Markers\Flags\%1_ca.paa'/><br/>",["nato","csat","aaf"] select ([WEST,EAST,INDEPENDENT] find (_this select 2))];
 _text = _text + format ["%1 has Taken Base %2", name _name, _target getVariable["JK_TvT_Count",1]];

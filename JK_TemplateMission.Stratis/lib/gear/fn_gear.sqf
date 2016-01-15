@@ -102,4 +102,3 @@ if (_backpack != "") then {
 {_unit addItem _x; false} count _items;
 [_unit,_insignium] call BIS_fnc_setUnitInsignia;
 _unit setVariable ["JK_NameTagClass", _nameTagName, true];
-if(true)exitWith{};

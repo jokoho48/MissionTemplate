@@ -46,6 +46,3 @@ if (_mode isEqualTo "obj") exitwith {
 if (_mode isEqualTo "low") exitwith {setTerrainGrid JK_var_TerrainLow;};
 if (_mode isEqualTo "middle") exitwith {setTerrainGrid JK_var_TerrainMiddle;};
 if (_mode isEqualTo "high") exitwith {setTerrainGrid JK_var_TerrainHigh;};
-
-
-if (true) exitwith {};

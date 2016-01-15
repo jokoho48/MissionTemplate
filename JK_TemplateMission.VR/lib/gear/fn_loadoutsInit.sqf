@@ -15,4 +15,3 @@ params [["_target", player, [objNull]]];
 //call for the loadout function
 [_target] call jk_loadOut_fnc_applyLoadout;
 JK_var_ChooseLoadout_Boxes call jk_loadOut_fnc_chooseLoadout;
-if (true) exitWith {};

@@ -9,11 +9,10 @@
     Returns:
     - Nothing
 */
-_text = _this  select 0;
+params ["_text"];
 _text = "Enhanced Mission Protections System: " + _text;
-[_text,{
-    private "_text";
-    _text = _this select 0;
+[_text, {
+    params ["_text"];
     hint _text;
     systemChat _text;
 },_this select 1, true, false] BIS_fnc_MP;

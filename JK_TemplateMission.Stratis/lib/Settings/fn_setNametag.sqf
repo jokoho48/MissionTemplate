@@ -12,8 +12,7 @@
     Example:
     [] call JK_Settings_fnc_setNametag;
 */
-
-_mode = _this select 0;
+params ["_mode"];
 
 if (_mode in ["RED","YELLOW","GREEN","BLUE","MAIN"]) exitWith {
     if !(assignedTeam player isEqualTo _mode) then {

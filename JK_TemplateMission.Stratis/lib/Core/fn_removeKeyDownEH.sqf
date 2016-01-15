@@ -19,14 +19,14 @@ _deleted = 0;
 {
     params ["_currentName"];
     if (_currentName in _this) then {
-        _this set[_this find (JK_var_KeyDownEvents deleteAt _foreachindex + _deleted) select 0, true];
+        _this set [_this find (JK_var_KeyDownEvents deleteAt _foreachindex + _deleted) select 0, true];
         _deleted = _deleted + 1;
     };
 } forEach JK_var_KeyDownEvents;
 
 {
   if (typeName _x == "STRING") then {
-    _this set[_foreachindex,false];
+    _this set [_foreachindex,false];
   };
 } forEach _this;
 

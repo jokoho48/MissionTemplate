@@ -77,66 +77,57 @@ setTerrainGrid 6.25;
 //----------------------------------- DO NOT EDIT BELOW ------------------------------------
 //-------------------------------------------------------------------------------------------------
 
-    //fix BIS feature
-    if (isServer) then {
-        [] spawn {
-            waitUntil {!(isNil "BIS_marta_mainscope")};
-            BIS_marta_mainscope setVariable ["rules",[["o_",[0.5,0,0,0]],["b_",[0,0.3,0.6,1]],["n_",[0,0.5,0,0]],["n_",[0.4,0,0.5,0]]],true];
-        };
+//fix BIS feature
+if (isServer) then {
+    [] spawn {
+        waitUntil {!(isNil "BIS_marta_mainscope")};
+        BIS_marta_mainscope setVariable ["rules",[["o_",[0.5,0,0,0]],["b_",[0,0.3,0.6,1]],["n_",[0,0.5,0,0]],["n_",[0.4,0,0.5,0]]],true];
     };
-
-    if(!isDedicated && hasInterface) then {
-        //only pilots can fly
-        #ifdef JK_var_enablePilotsOnly
-            if (alive player && (!(typeOf player in JK_var_pilotClasses) && !(name player in JK_var_pilotNames) && !(player in JK_var_pilotObjects))) then {
-                JK_var_PilotsOnly_EVH = addMissionEventHandler ["Draw3D", {
-                    if (vehicle player isKindOf "Air" && (player == assignedDriver vehicle player || player == (vehicle player) turretUnit [0])) then {
-                        doGetOut player;
-                        hint (localize "STR_JK_ONLYPILOTS");
-                    };
-                }];
-            };
-        #endif
-
-        #ifdef JK_var_enableCrewDisplay
-        [] spawn {
-            waitUntil { !isNull (findDisplay 46) };
-            ["init", [[[0x1D, false, true, false], [0x1D, false, false, false], [0x9D, false, true, false], [0x9D, false, false, false]], player]] call JK_Settings_fnc_vehicleCrew;
+};
+if(!isDedicated && hasInterface) then {
+    //only pilots can fly
+    #ifdef JK_var_enablePilotsOnly
+        if (alive player && (!(typeOf player in JK_var_pilotClasses) && !(name player in JK_var_pilotNames) && !(player in JK_var_pilotObjects))) then {
+            JK_var_PilotsOnly_EVH = addMissionEventHandler ["Draw3D", {
+                if (vehicle player isKindOf "Air" && (player == assignedDriver vehicle player || player == (vehicle player) turretUnit [0])) then {
+                    doGetOut player;
+                    hint (localize "STR_JK_ONLYPILOTS");
+                };
+            }];
         };
-        #endif
-
-
-        //Bis Fixes
-        player addEventHandler ["Killed",{ BIS_revive_reviveBleedOutDelayDefault = JK_var_reviveTime; }];
-        player addEventHandler ["Respawn",{ (_this select 0) setVariable ["JK_Core_Interaction_Actions", [],true]; }];
-
-        //Nametags
-        #ifdef JK_var_enableNametags
-            if !((isClass (configFile >> "CfgPatches" >> "cba_ee"))&&((isClass (configFile >> "CfgPatches" >> "AGM_NameTags")) || (isClass (configFile >> "CfgPatches" >> "ACE_Nametags")) || (isClass (configFile >> "CfgPatches" >> "cse_sys_tags")) || (isClass (configFile >> "CfgPatches" >> "")) || (isClass (configFile >> "CfgPatches" >> "A3C_NameTag"))||(isClass (configFile >> "CfgPatches" >> "STNametags")))) then {
-            	JK_Nametag_EVH = addMissionEventHandler ["Draw3D", JK_Core_fnc_draw3D];
-            	JK_NameTagsActiv = true;
-            };
-        #endif
-
-        //first person only
-        #ifdef JK_var_enableFirstPersonOnly
-            JK_FPV_EVH = addMissionEventHandler ["Draw3D", {
-				if (cameraView in ["INTERNAL","GUNNER"]) exitWith {};
-                if ((JK_var_enable3rdPersonInBase) > (player distance (getMarkerPos "respawn_west"))) exitWith {};
-                if ((JK_var_enable3rdPersonInBase) > (player distance (getMarkerPos "respawn_east"))) exitWith {};
-                if ((JK_var_enable3rdPersonInBase) > (player distance (getMarkerPos "respawn_guerrila"))) exitWith {};
-                if (JK_var_enableVehicle3rdPerson && (vehicle player != player)) exitWith {};
-                vehicle player switchCamera "INTERNAL";
-			}];
-        #endif
-    };
-
-    #ifdef JK_var_isTvT
-        missionNameSpace setVariable ["JK_TvT_Time",JK_var_TvTTime];
-        [BASE1, BASE2, BASE3, BASE4, BASE5, BASE6, BASE7, BASE8] call JK_TvT_fnc_init;
     #endif
 
-     JK_var_AllCrates append JK_var_ChooseLoadOut_Boxes;
-    JK_var_AllCrates call JK_Core_fnc_crate;
+    //Bis Fixes
+    player addEventHandler ["Killed",{ BIS_revive_reviveBleedOutDelayDefault = JK_var_reviveTime; }];
+    player addEventHandler ["Respawn",{ (_this select 0) setVariable ["JK_Core_Interaction_Actions", [],true]; }];
+
+    //Nametags
+    #ifdef JK_var_enableNametags
+        if !((isClass (configFile >> "CfgPatches" >> "cba_ee"))&&((isClass (configFile >> "CfgPatches" >> "AGM_NameTags")) || (isClass (configFile >> "CfgPatches" >> "ACE_Nametags")) || (isClass (configFile >> "CfgPatches" >> "cse_sys_tags")) || (isClass (configFile >> "CfgPatches" >> "")) || (isClass (configFile >> "CfgPatches" >> "A3C_NameTag"))||(isClass (configFile >> "CfgPatches" >> "STNametags")))) then {
+            JK_Nametag_EVH = addMissionEventHandler ["Draw3D", JK_Core_fnc_draw3D];
+            JK_NameTagsActiv = true;
+        };
+    #endif
+
+    //first person only
+    #ifdef JK_var_enableFirstPersonOnly
+        JK_FPV_EVH = addMissionEventHandler ["Draw3D", {
+            if (cameraView in ["INTERNAL","GUNNER"]) exitWith {};
+            if ((JK_var_enable3rdPersonInBase) > (player distance (getMarkerPos "respawn_west"))) exitWith {};
+            if ((JK_var_enable3rdPersonInBase) > (player distance (getMarkerPos "respawn_east"))) exitWith {};
+            if ((JK_var_enable3rdPersonInBase) > (player distance (getMarkerPos "respawn_guerrila"))) exitWith {};
+            if (JK_var_enableVehicle3rdPerson && (vehicle player != player)) exitWith {};
+            vehicle player switchCamera "INTERNAL";
+        }];
+    #endif
+};
+
+#ifdef JK_var_isTvT
+    missionNameSpace setVariable ["JK_TvT_Time",JK_var_TvTTime];
+    [BASE1, BASE2, BASE3, BASE4, BASE5, BASE6, BASE7, BASE8] call JK_TvT_fnc_init;
+#endif
+
+JK_var_AllCrates append JK_var_ChooseLoadOut_Boxes;
+JK_var_AllCrates call JK_Core_fnc_crate;
 
 //-------------------------------------------------------------------------------------------------

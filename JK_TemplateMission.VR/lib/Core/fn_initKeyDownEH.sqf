@@ -13,13 +13,17 @@
  */
 
 _EHKeyDown = {
+    scopeName "Main"
     params["_dikkeyInput","_modifierInput"];
     {
-        _x params["_name","_dikkey","_modifier","_code"];
-        if !(_dikkey == _dikkeyInput) exitWith {};
-         if !(_modifier == _modifierInput)exitWith{};
-          call _code;
-          nil
+        _x params ["_name","_dikkey","_modifier","_code"];
+        if !(_dikkey == _dikkeyInput) then {
+            if !(_modifier == _modifierInput) then {
+                _ret = call _code;
+                if (!isNil "_ret" && {_ret isEqualType true} && {_ret}) exitWith { true breakOut "Main" };
+            };
+        };
+        nil
     } count JK_var_KeyDownEvents;
     false
 };

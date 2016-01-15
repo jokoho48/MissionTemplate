@@ -106,7 +106,7 @@ _items = [];
 
 ///// No editing necessary below this line /////
 
-_player = _this select 0;
+params ["_player"];
 _player setCaptive true;    //unfortunately necessary due to the time consumed by changing the weapon
 [_player] call jk_loadOut_fnc_gear;
 _player setCaptive false;

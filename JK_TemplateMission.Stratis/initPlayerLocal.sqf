@@ -10,5 +10,5 @@ player createDiaryRecord ["Info",["Informationen zur Mission",JK_var_Info]];
 0 spawn {
     waitUntil {player == player && time > 1};
     [player] call JK_loadOut_fnc_loadOutsInit;
-	[format["<img size= '6' shadow='false' image='data\logo.paa'/><br/><t size='.9' color='#FFFFFF'>%1<br/></t><t size='.5' color='#FFFFFF'>%2 81.169.153.237:9985</t>", localize "STR_JK_WELCOME_MESSAGE_1", localize "STR_JK_WELCOME_MESSAGE_2"],0,0,2,2] spawn BIS_fnc_dynamicText;
+    [format["<img size= '6' shadow='false' image='data\logo.paa'/><br/><t size='.9' color='#FFFFFF'>%1<br/></t><t size='.5' color='#FFFFFF'>%2 81.169.153.237:9985</t>", localize "STR_JK_WELCOME_MESSAGE_1", localize "STR_JK_WELCOME_MESSAGE_2"],0,0,2,2] spawn BIS_fnc_dynamicText;
 };

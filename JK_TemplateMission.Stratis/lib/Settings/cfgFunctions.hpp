@@ -8,7 +8,6 @@ class JK_Settings
         class updateVD {};
         class ViewDistance {};
         class OpenMenu {};
-        class vehicleCrew {};
         class updateUI {};
         class setNameTagGroup { postInit = 1; };
         class setLZName { postInit = 1; };

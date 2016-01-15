@@ -1,20 +1,20 @@
 /*
-	Author: NetFusion
+    Author: NetFusion
 
-	Description:
-	Continuously checks whether an action should be added to the cursorTarget.
+    Description:
+    Continuously checks whether an action should be added to the cursorTarget.
 
-	Parameter(s):
-	-
+    Parameter(s):
+    -
 
     Remarks:
     * Should only be called once per mission.
 
-	Returns:
-	-
+    Returns:
+    -
 
-	Example:
-	true spawn JK_Core_fnc_Interaction_loop;
+    Example:
+    true spawn JK_Core_fnc_Interaction_loop;
 */
 
 _text = "";
@@ -43,4 +43,4 @@ player setVariable ["JK_LastTarget",_lastTarget,true];
     false
 } count JK_Core_Interaction_Actions;
 waitUntil {!isNull cursorTarget && cursorTarget != _lastTarget};
-if (true) exitWith{true spawn JK_Core_fnc_Interaction_loop;};
+true spawn JK_Core_fnc_Interaction_loop;
